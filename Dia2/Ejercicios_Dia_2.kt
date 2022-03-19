@@ -28,13 +28,31 @@ fun main() {
 }
 
 private fun imprimirPalabras(texto: String){
-    var list = texto.split(' ')
+
+    val transicion = texto.split( " ")
+    for (caracter in transicion){
+        println(caracter)
+    }
 }
 
 private fun imprimirPalabras2(texto: String, numeroPalabras: Int){
+    // Creamos una lista de 10 posiciones la llenamos con las 10 primeras palabras
+    // Hacemos le mismo bucle que el ej 1, pero con un contador y cuando el contador llegue al mismo valor que numPalbras salga
+    var contador = 0
 
+    for (palabra in texto.split(' ')){
+        //texto.chunked(numeroPalabras)
+        println(palabra)
+    }
 }
 
 private fun imprimirPalabras3(texto: String, numeroPalabras: Int){
 
+    var listaPalabras = texto.split(' ')
+    var contador = 0
+
+    while (contador != numeroPalabras){
+        println(listaPalabras[contador])
+        contador++
+    }
 }
