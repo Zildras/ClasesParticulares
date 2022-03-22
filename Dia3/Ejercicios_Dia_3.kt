@@ -5,11 +5,11 @@ package Dia3
  */
 
 fun main() {
-    val listaDeNums = listOf(1,65,83294,12,3,245,34,1,6,999,420,60)
+    var listaDeNums = listOf(1,65,83294,12,3,245,34,1,6,999,420,60)
     val listaDeTexto = "Me gusta ir por el campo y observar los caballos como andan por la hierba alta.".split(' ')
 
     println("Ejercicio 1:")
-    println("Suma los números números naturales con un while.")
+    println("Suma los números naturales con un while.")
     sumaRecursiva(listaDeNums)
 
     println("Ejercicio 2:")
@@ -23,9 +23,11 @@ fun main() {
 
 private fun sumaRecursiva(texto: List<Int>){
 
+
 }
 
 private fun sumaFor(texto: List<Int>){
+
 
 }
 
