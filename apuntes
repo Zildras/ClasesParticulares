@@ -1,0 +1,5 @@
+Los boleanos vienen bien para cuando queremos mostrar mensajes de errores en un bucle.
+
+Cuando hagamos un while casi siempre usaremos un contador para recorrer la lista.
+
+.toList() hace lo mismo que el split pero sin delimitador ''.

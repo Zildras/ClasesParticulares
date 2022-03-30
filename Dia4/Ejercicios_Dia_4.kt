@@ -15,7 +15,7 @@ fun main() {
     formarPalabras(listaChars)
 
     println("Ejercicio 2:")
-    println("Devuelveme una lista con los numeros invertidos (el 1º en la última pos, el 2º en la penúltima...).")
+    println("Devuelveme una lista con los numeros invertidos (el 1º en la última posición, el 2º en la penúltima...).")
     println(listaInvertida(listaDeNums))
 
     println("Ejercicio 3:")
@@ -23,19 +23,26 @@ fun main() {
     println("**Una palabra palindroma es aquella que se puede leer de izquierda a derecha y de derecha a izquierda y se lee igual.")
     esPalindroma("caballo")
     esPalindroma("reconocer")
+    esPalindroma("cuc")
 }
 
 private fun formarPalabras(llistaChars: List<Char>){
     // Tendrás que ir leyendo toda la lista y ir añadiendo todos los caracteres leidos en un String que tendrás
 
+    val charList = charArrayOf('o','r','i','o','l')
+    val string = String(charList)
+    println(string)
+
 }
 
-private fun listaInvertida(llistaDeNums: List<Int>){
-    // Tendras que crear una nueva lista y ir añadiendo en esa nueva lista desde la última pos a la primera
+private fun listaInvertida(llistaDeNums: List<Int>): List<Int>{
+    // Tendras que crear una nueva lista y ir añadiendo en esa nueva lista desde la última posición a la primera
     // Necesitaras un bucle (o no) para recorrer la lista de nums
 
+    return llistaDeNums.reversed()
 }
 
 private fun esPalindroma(palabra: String){
-    // Necesitaras convertir tu palabra en una lista y comprobar si tu 1ª pos es igual que la última, la 2º con la penúltima, ...
+    // Necesitaras convertir tu palabra en una lista y comprobar si tu 1ª posición es igual que la última, la 2º con la penúltima, ...
+    var string  = palabra.toList()
 }

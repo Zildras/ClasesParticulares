@@ -6,7 +6,7 @@ package Dia3
 
 fun main() {
     var listaDeNums = listOf(1,65,83294,12,3,245,34,1,6,999,420,60)
-    val listaDeTexto = "Me gusta ir por el campo y observar los caballos como andan por la hierba alta.".split(' ')
+    var listaDeTexto = "Me gusta ir por el campo y observar los caballos como andan por la hierba alta.".split(' ')
 
     println("Ejercicio 1:")
     println("Suma los números naturales con un while.")
@@ -19,11 +19,11 @@ fun main() {
     println("Ejercicio 3:")
     println("Busca la palabra caballo dentro de listaDeTexto con while:")
     // Tienes que tener en cuenta que puedo poner una palabra que no esté en el texto
-    //buscarPalabraWhile("caballo", listaDeTexto)
+    buscarPalabraWhile("caballo", listaDeTexto)
 
     println("Ejercicio 4:")
     println("Busca la palabra caballo dentro de listaDeTexto con un for:")
-    //buscarPalabraFor("caballo", listaDeTexto)
+    buscarPalabraFor("caballo", listaDeTexto)
 
     println("Ejercicio 5:")
     println("Busca la palabra caballo dentro de listaDeTexto de forma recursiva:")
@@ -75,12 +75,37 @@ fun imprimirCançoPomes(pomes: Int): Int {
 
 private fun buscarPalabraWhile(palabra: String, texto: List<String>){
 
+    var contador = 0
+
+    while (palabra != texto[contador] && contador +1 != texto.size){
+        contador++
+    }
+
+    if (contador +1 == texto.size){
+        println("Ya no hay mas información en la lista")
+    } else{
+        println("palabra encontrada: $palabra")
+    }
 }
 
 private fun buscarPalabraFor(palabra: String, texto: List<String>){
 
+    var verdadero = true
+
+    for (i in texto){
+        if (i == palabra){
+            verdadero = false
+        }
+    }
+
+    if (verdadero == true){
+        println("palabra no encontrada")
+    } else{
+        println("palabra encontrada: $palabra")
+    }
+
 }
 
 private fun buscarPalabraRecursivo(palabra: String, texto: List<String>){
-
+//preguntar en clase si hay que hacer recursividad.
 }
