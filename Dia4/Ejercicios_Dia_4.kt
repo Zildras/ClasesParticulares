@@ -29,9 +29,13 @@ fun main() {
 private fun formarPalabras(llistaChars: List<Char>){
     // Tendrás que ir leyendo toda la lista y ir añadiendo todos los caracteres leidos en un String que tendrás
 
-    val charList = charArrayOf('o','r','i','o','l')
-    val string = String(charList)
-    println(string)
+    var caja = ""
+
+    for (i in llistaChars){
+        caja += i
+    }
+
+    println(caja)
 
 }
 
@@ -39,10 +43,26 @@ private fun listaInvertida(llistaDeNums: List<Int>): List<Int>{
     // Tendras que crear una nueva lista y ir añadiendo en esa nueva lista desde la última posición a la primera
     // Necesitaras un bucle (o no) para recorrer la lista de nums
 
-    return llistaDeNums.reversed()
+    //return llistaDeNums.reversed()
+
+    var nuevaLista = mutableListOf<Int>()
+
+    var contador = 0
+
+    while (contador != llistaDeNums.size){
+        contador++
+    }
+
+    nuevaLista.add(contador)
+
+    //tengo que coger lo que hay en contador y añadirlo a la nuevaLista descendente
+    //sortDescending
+
 }
 
 private fun esPalindroma(palabra: String){
     // Necesitaras convertir tu palabra en una lista y comprobar si tu 1ª posición es igual que la última, la 2º con la penúltima, ...
     var string  = palabra.toList()
+
+
 }

@@ -3,5 +3,3 @@ Los boleanos vienen bien para cuando queremos mostrar mensajes de errores en un 
 Cuando hagamos un while casi siempre usaremos un contador para recorrer la lista.
 
 .toList() hace lo mismo que el split pero sin delimitador ''.
-
-La condición del while sera que hay que llegar hasta el final de la lista (en bucles sencillos).
