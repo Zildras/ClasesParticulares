@@ -43,20 +43,18 @@ private fun listaInvertida(llistaDeNums: List<Int>): List<Int>{
     // Tendras que crear una nueva lista y ir añadiendo en esa nueva lista desde la última posición a la primera
     // Necesitaras un bucle (o no) para recorrer la lista de nums
 
-    //return llistaDeNums.reversed()
-
-    var nuevaLista = mutableListOf<Int>()
+    val nuevaLista = MutableList(llistaDeNums.size){0}
 
     var contador = 0
+    var contador2 = llistaDeNums.size-1
 
     while (contador != llistaDeNums.size){
+        nuevaLista[contador2] = llistaDeNums[contador]
+        contador2--
         contador++
     }
 
-    nuevaLista.add(contador)
-
-    //tengo que coger lo que hay en contador y añadirlo a la nuevaLista descendente
-    //sortDescending
+    return nuevaLista
 
 }
 
