@@ -1,12 +1,17 @@
 package Dia8
 
-class ClaseOriol {
+class ClaseOriol(list: List<Int>) {
 
-    public fun listaClase (listaNumeros: List<Int>) {
+    init {
+        check(list != emptyList<Int>()) { println("ERROR")}
+    }
 
-    val listaOriol = mutableListOf<Int>(5)
+    fun recorrerLista(lista: List<Int>) {
 
-        println(listaOriol)
-
+        for (num in lista){
+            if (num == 5){
+                println("EXITO")
+            }
+        }
     }
 }

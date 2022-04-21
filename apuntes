@@ -15,3 +15,8 @@ Con el Init nos permite hacer comprobaciónes de diferentes variables a parte de
 Con el If aunque esten mal las variables nos deja continuar con el programa o ponerle un valor por defecto y el Assert nos para el programa.
 
 Si ponemos this estamos llamando a la variable de la Clase, y si no le ponemos this estamos llamando a la variable que nos pasa por parametro.
+
+Un "data class" solo tiene variables, geters y seters, nada mas, es una especie de base de datos hecha a partir de una clase. Es decir, que no tenemos metodos y en una
+clase si.
+
+Con el "get" muestras y con el "set" modificas el valor.

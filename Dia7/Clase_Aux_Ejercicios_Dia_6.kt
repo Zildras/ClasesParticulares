@@ -1,6 +1,6 @@
 package Dia7
 
-class Clase_Aux_Ejercicios_Dia_6 {
+open class Clase_Aux_Ejercicios_Dia_6 {
 
     public fun multiplicarLista(listaNumeros: List<Int>): List<Int> {
 

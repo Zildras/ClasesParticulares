@@ -25,6 +25,10 @@ fun main() {
     println("Quiero que crees otra clase llamada Clase_Hija y que esta herede de su clase padre (Clase_Aux_Ejercicios_Dia_6) sus funciones")
     println("Quiero que despues de todo esto llames a la funcion implementada anteriormente desde la clase hija")
     //prinln(funcion(numeros))
+
+    val claseHija = Clase_Hija()
+
+    println(claseHija.multiplicarLista(numeros))
 }
 
 private fun multiplicarLista(listaNumeros: List<Int>) : List<Int>{
