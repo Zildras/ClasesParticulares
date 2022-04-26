@@ -1,5 +1,7 @@
 package Dia9
 
+import Dia9.Teoria.Colores
+
 /*
  * Ejercicios a resolver sobre varias cosas
  *
@@ -20,8 +22,24 @@ fun main() {
     println("Ejercicio 3")
     println("Crea una clase padre con la funcion HelloWord y una clase hija con la funcion HelloBarcelona")
     println("Haz pruebas con el polimorfismo y como funciona")
+
+    //De especifico a general se puede.
+    val ejercicio3 = ClaseHija()
+
+    ejercicio3.HelloBarcelona()
+    ejercicio3.HelloWorld()
+
+    //De general a especifico no se puede.
+    val general : ClasePadre = ClaseHija()
+
+    general.HelloWorld()
+
 }
 
 private fun posicionLetra(posicion_en_el_diccionario: Int){
-
+    for (enum in Letras.values()) {
+       if (enum.numero == posicion_en_el_diccionario){
+           println(enum.letra)
+       }
+    }
 }

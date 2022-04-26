@@ -1,6 +1,6 @@
 package Dia8
 
-class ClaseOriol(list: List<Int>) {
+open class ClaseOriol(list: List<Int>) {
 
     init {
         check(list != emptyList<Int>()) { println("ERROR")}

@@ -30,4 +30,8 @@ fun main() {
     println("Haz que una clase hija herede de esa clase padre y ejecute la funcion (Lo mismo que el anterior dia)")
     //val claseHijaCreadaPorTi = ClaseHijaCreadaPorTi(lista)
     //claseHijaCreadaPorTi.funcionCreadaPorTi(lista2)
+
+    val ejercicio3 = ClaseOriolHija(numeros)
+
+    ejercicio3.recorrerLista(numeros)
 }
